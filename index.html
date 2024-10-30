@@ -2,8 +2,21 @@
 <html lang="en">
     <head>
 
-        <script>
-            alert("¡Bienvenido a mi sitio web!");
+      <div class="alert-overlay" id="customAlert">
+          <div class="alert-box">
+        <img src="img/icono.gif" alt="Ícono de bienvenida" />
+        <!-- Cambia la URL de la imagen según prefieras -->
+        <h2>¡Bienvenido!</h2>
+        <p>Gracias por visitar mi sitio web.</p>
+        <button class="close-btn" onclick="closeAlert()">Cerrar</button>
+          </div>
+       </div>
+
+       <script>
+        // Función para cerrar la alerta
+        function closeAlert() {
+            document.getElementById("customAlert").style.display = "none";
+        }
         </script>
         
         <meta charset="utf-8">
